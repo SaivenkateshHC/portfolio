@@ -1,0 +1,25 @@
+@import "../../../app/globals.scss";
+
+.bannerSection {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lowerIllustration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+}
+
+.bannerCard{
+    height: 50vh;
+    width: 70vw;
+    background: $cardBackground;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    margin: auto;
+}
+
