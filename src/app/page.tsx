@@ -5,7 +5,20 @@ import NavigationBar from '../components/home/NavigationBar/NavigationBar'
 import BannerSection from '../components/home/BannerSection/BannerSection'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import AboutSection from '@/components/home/AboutSection/AboutSection';
-import SkillsSection from '@/components/home/SkillsSection/SkillsSection';
+
+
+const tempArray = [
+  {
+    name:"string",
+    description:"string",
+    image:"/assets/React-icon.svg.png"
+  },
+  {
+    name:"string",
+    description:"string",
+    image:"/assets/React-icon.svg.png"
+  }
+]
 
 export default function Home() {
   return (
@@ -13,9 +26,7 @@ export default function Home() {
       <ParallaxProvider>
       <NavigationBar/>
       <BannerSection/>
-      <AboutSection/>
-      <SkillsSection/>
-      {/* <BannerSection/> */}
+      <AboutSection/>     
       </ParallaxProvider>
     </main>
   )
