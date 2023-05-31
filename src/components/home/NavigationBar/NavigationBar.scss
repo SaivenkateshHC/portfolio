@@ -3,9 +3,9 @@
 .navigation-bar {
     position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    z-index: 10000;
     
 
     .navigation-card {
@@ -13,7 +13,8 @@
         padding: 4px;    
         border-radius: 0 0 150px 150px;
         height: calc(30px + 12px);
-        width: calc(70% + 16px);
-        background: $cardBackground;
+        width: calc(40% + 16px);
+        background: rgb(240,65,65);
+        background: linear-gradient(115deg, rgba(240,65,65,1) 0%, rgba(93,48,189,1) 100%);
     }
 }

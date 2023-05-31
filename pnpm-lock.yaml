@@ -6,6 +6,7 @@ specifiers:
   '@types/node': 20.1.4
   '@types/react': 18.2.6
   '@types/react-dom': 18.2.4
+  atropos: ^1.0.2
   bootstrap: ^5.2.3
   eslint: 8.40.0
   eslint-config-next: 13.4.2
@@ -16,6 +17,7 @@ specifiers:
   react-scroll-parallax: ^3.4.2
   sass: ^1.62.1
   styled-components: 6.0.0-rc.1
+  swiper: ^8.2.2
   typescript: 5.0.4
 
 dependencies:
@@ -24,6 +26,7 @@ dependencies:
   '@types/node': 20.1.4
   '@types/react': 18.2.6
   '@types/react-dom': 18.2.4
+  atropos: 1.0.2
   bootstrap: 5.2.3_@popperjs+core@2.11.7
   eslint: 8.40.0
   eslint-config-next: 13.4.2_3qfatcekpgbllh6uk5ivyhkbxq
@@ -34,6 +37,7 @@ dependencies:
   react-scroll-parallax: 3.4.2_biqbaboplfbrettd7655fr4n2y
   sass: 1.62.1
   styled-components: 6.0.0-rc.1_biqbaboplfbrettd7655fr4n2y
+  swiper: 8.4.7
   typescript: 5.0.4
 
 packages:
@@ -1810,6 +1814,11 @@ packages:
     resolution: {integrity: sha512-eBvWn1lvIApYMhzQMsu9ciLfkBY499mFZlNqG+/9WR7PVlroQw0vG30cOQQbaKz3sCEc44TAOu2ykzqXSNnwag==}
     dev: false
 
+  /atropos/1.0.2:
+    resolution: {integrity: sha512-0RqyHfMyIhRXgnHuSQz2LVOE81jtAQ7EZTrF75ngiipklIsxajZ2vD042EXdiIEDs6eEAzfE10k+YhIbNl4/eg==}
+    engines: {node: '>= 12.0.0'}
+    dev: false
+
   /available-typed-arrays/1.0.5:
     resolution: {integrity: sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==}
     engines: {node: '>= 0.4'}
@@ -2160,6 +2169,12 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       esutils: 2.0.3
+    dev: false
+
+  /dom7/4.0.6:
+    resolution: {integrity: sha512-emjdpPLhpNubapLFdjNL9tP06Sr+GZkrIHEXLWvOGsytACUrkbeIdjO5g77m00BrHTznnlcNqgmn7pCN192TBA==}
+    dependencies:
+      ssr-window: 4.0.2
     dev: false
 
   /electron-to-chromium/1.4.394:
@@ -3799,6 +3814,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /ssr-window/4.0.2:
+    resolution: {integrity: sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==}
+    dev: false
+
   /stop-iteration-iterator/1.0.0:
     resolution: {integrity: sha512-iCGQj+0l0HOdZ2AEeBADlsRC+vsnDsZsbdSiH1yNSjcfKM7fdpCMfqAL/dwF5BLiw/XhRft/Wax6zQbhq2BcjQ==}
     engines: {node: '>= 0.4'}
@@ -3946,6 +3965,15 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: false
+
+  /swiper/8.4.7:
+    resolution: {integrity: sha512-VwO/KU3i9IV2Sf+W2NqyzwWob4yX9Qdedq6vBtS0rFqJ6Fa5iLUJwxQkuD4I38w0WDJwmFl8ojkdcRFPHWD+2g==}
+    engines: {node: '>= 4.7.0'}
+    requiresBuild: true
+    dependencies:
+      dom7: 4.0.6
+      ssr-window: 4.0.2
     dev: false
 
   /synckit/0.8.5:

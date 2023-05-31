@@ -1,0 +1,32 @@
+@import '../../../app//globals.scss';
+
+
+.contact-me {
+    background-image:url("/assets/second-section-gradient.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .ContactMeCard{
+        min-width: 50vw;
+        background-color: $cardBackground;
+
+        @media screen and (min-width:"1224px"){
+            height:60vh;
+            min-width: 50vw;
+        }
+        @media screen and (max-width:"1223px"){
+            height: 100%;
+            min-width: 80vw;
+            margin-bottom: 24px;
+        }
+    }
+    
+    .contact-button{
+        background-color: $cardBackground;
+        min-width: 162px;
+        border-radius: 16px;
+        padding: 16px;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
