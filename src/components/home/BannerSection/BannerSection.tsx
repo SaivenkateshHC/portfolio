@@ -35,6 +35,7 @@ function BannerSection() {
                 weightDesktop="700"
                 weightMobile="700"
                 color="white"
+                className='mb-1'
               >Sai Venkatesh H</Typography>
               <Typography font="League Spartan"
                 className='fst-italic mb-2'
@@ -52,7 +53,7 @@ function BannerSection() {
                   weightDesktop="400"
                   weightMobile="400"
                   color="white"
-                >I'm a Software Engineer specializing in building website especially Frontend (and occasionaly designing) expceptional Digital experience and Eye catching transitions.
+                >I'm a Software Engineer specializing in building website especially Frontend (and occasionaly designing) with expceptional Digital experience and Eye catching transitions.
                   Currently,I'm focusing on websites with Augmented Reality and ORM database particularly Prisma
                 </Typography>
               </div>

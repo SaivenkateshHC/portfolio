@@ -13,7 +13,25 @@
         padding: 4px;    
         border-radius: 0 0 150px 150px;
         height: calc(30px + 12px);
+        @media screen and (max-width:1223px) {
+            width: calc(80% + 16px);    
+        }
         width: calc(40% + 16px);
+        background: rgb(240,65,65);
+        background: linear-gradient(115deg, rgba(240,65,65,1) 0%, rgba(93,48,189,1) 100%);
+    }
+    .navigation-list {
+        transform: none !important;
+        margin: auto;
+        padding: 4px;    
+        border-radius: 0 0 50px 50px;
+        height: calc(100% + 48px);
+        @media screen and (max-width:1223px) {
+            width: calc(80% + 16px);    
+            margin-top: -24px;
+            padding-top: 32px;
+        }
+        width: calc(30% + 16px);
         background: rgb(240,65,65);
         background: linear-gradient(115deg, rgba(240,65,65,1) 0%, rgba(93,48,189,1) 100%);
     }
