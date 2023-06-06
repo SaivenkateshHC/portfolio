@@ -14,26 +14,31 @@ import Atropos from 'atropos/react';
 import { ContainerWrapper } from '@/components/common/Container/ContainerWrapper.styled';
 import { Typography } from '@/elements/Typography/Typography.styled';
 
+//assets
+import projectCardBg from '../../../../public/assets/glassCard.png'
+import { truncateDescription } from '@/utils/utilityFunctions';
+
 
 const ProjectSection = () => {
     return (
         <div className='project-section'>
-            
+
             <SectionWrapper height='full'>
+
+
+                <Typography font="League Spartan"
+                    className='fst-italic mb-3 text-center'
+                    sizeDesktop="32"
+                    sizeMobile="28"
+                    weightDesktop="700"
+                    weightMobile="700"
+                    color="white"
+                >Personal Projects</Typography>
                 <ContainerWrapper className='align-items-start'>
-                
-            <Typography font="League Spartan"
-                                 className='fst-italic'
-                                sizeDesktop="24"
-                                sizeMobile="20"
-                                weightDesktop="700"
-                                weightMobile="700"
-                                color="white"
-                                >Projects</Typography>
                     <div className='mx-auto'>
                         <div className='d-flex flex-column justify-content-between '>
                             <div className='section-title'>
-                            
+
                             </div>
 
                             <div className='project-list-wrapper'>
@@ -43,9 +48,9 @@ const ProjectSection = () => {
                                     centeredSlides={true}
                                     spaceBetween={30}
                                     grabCursor={true}
-                                    autoplay={{
-                                        delay: 2000,
-                                    }}
+                                    // autoplay={{
+                                    //     delay: 2000,
+                                    // }}
                                     pagination={{
                                         clickable: true,
                                     }}
@@ -58,16 +63,48 @@ const ProjectSection = () => {
                                                 <div className='project-card'>
                                                     <Atropos
                                                         className="atropos-banner"
-                                                        highlight={false}
+                                                        highlight={true}
                                                         onEnter={() => console.log("enter")}
                                                     >
-                                                        <img
+                                                        {/* <img
                                                             data-atropos-offset="-4.5"
                                                             src="https://raw.githubusercontent.com/nolimits4web/atropos/master/playground/react/i/atropos-bg.svg"
                                                             alt=""
+                                                        /> */}
+                                                        <img
+                                                            data-atropos-offset="-4.5"
+                                                            className='project-card-bg'
+                                                            src={'/assets/glassCard.png'}
+                                                            alt=""
                                                         />
-                                                        <div className='project-name' data-atropos-offset="3">
-                                                            <p >{item.name}</p>
+                                                        <div className='featuredImage-wrapper' data-atropos-offset="-1">
+                                                            <div className='featuredImage'>
+                                                                {
+                                                                    item.stackImages.map(image => {
+                                                                        return <img src={image} alt={'stackImage'} />
+                                                                    })
+                                                                }
+                                                            </div>
+                                                        </div>
+
+                                                        <div className='project-content pr-3 ' data-atropos-offset="3">
+
+                                                            <Typography font="Nunito Sans"
+                                                                className=' mb-3'
+                                                                sizeDesktop="18"
+                                                                sizeMobile="16"
+                                                                weightDesktop="400"
+                                                                weightMobile="400"
+                                                                color="white"
+                                                            >{item.name}</Typography>
+                                                            <Typography font="Nunito Sans"
+                                                                className=' mb-3 fst-italic '
+                                                                sizeDesktop="16"
+                                                                sizeMobile="14"
+                                                                weightDesktop="400"
+                                                                weightMobile="400"
+                                                                color="white"
+                                                            >{truncateDescription(45, item.description)}</Typography>
                                                         </div>
                                                     </Atropos>
                                                     {/* image */}
@@ -79,7 +116,7 @@ const ProjectSection = () => {
                                 </Swiper>
                             </div>
 
-                            
+
                         </div>
                     </div>
                 </ContainerWrapper>

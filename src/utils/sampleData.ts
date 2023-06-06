@@ -3,6 +3,10 @@ export const projects=[
         id:1,
         name:"LMS",
         description:"Learning management system using react js",
+        stackImages:[
+            '/assets/js.png',
+            '/assets/react.png'
+        ],
         librariesAndPackages:[
             {
                 id:1,
@@ -15,13 +19,17 @@ export const projects=[
         ],
         role:["developer","maintainer"],
         link:"",
-        bakgroundImage:"",
+       
         featureImage:""
     },
     {
         id:2,
         name:"website layout builder",
-        description:"Learning management system using react js",
+        description:"A web application to develop an UI for Website by customizing it's position and much more.This is developed using React js",
+        stackImages:[
+            '/assets/js.png',
+            '/assets/react.png'
+        ],
         librariesAndPackages:[
             {
                 id:1,
@@ -34,32 +42,32 @@ export const projects=[
         ],
         role:["developer","maintainer"],
         link:"",
-        bakgroundImage:"",
+       
         featureImage:""
     },
     {
         id:3,
         name:"React polyline - mapmyindia",
-        description:"Learning management system using react js",
+        description:"This is an npm package where we could able to create polyline in mapMyIndia in React js",
+        stackImages:[
+            '/assets/js.png',
+            '/assets/react.png'
+        ],
         librariesAndPackages:[
-            {
-                id:1,
-                name:"redux"
-            },
-            {
-                id:2,
-                name:"graphql"
-            }
         ],
         role:["developer","maintainer"],
         link:"",
-        bakgroundImage:"",
+       
         featureImage:""
     },
     {
         id:4,
         name:"react kanban",
-        description:"Learning management system using react js",
+        description:"A Kanban board for ticket management using React js",
+        stackImages:[
+            '/assets/js.png',
+            '/assets/react.png'
+        ],
         librariesAndPackages:[
             {
                 id:1,
@@ -72,32 +80,33 @@ export const projects=[
         ],
         role:["developer","maintainer"],
         link:"",
-        bakgroundImage:"",
+       
         featureImage:""
     },
     {
         id:5,
-        name:"info Circle",
-        description:"Learning management system using react js",
+        name:"Info Circle",
+        description:"A Circular management application developed in Django Framework in python",
+        stackImages:[
+            '/assets/py.png',
+            '/assets/dj.png'
+        ],
         librariesAndPackages:[
-            {
-                id:1,
-                name:"redux"
-            },
-            {
-                id:2,
-                name:"graphql"
-            }
+           
         ],
         role:["developer","maintainer"],
         link:"",
-        bakgroundImage:"",
+       
         featureImage:""
     },
     {
         id:5,
         name:"Movie finder",
-        description:"Learning management system using react js",
+        stackImages:[
+            '/assets/js.png',
+            '/assets/react.png'
+        ],
+        description:"A mini project which fetches data from api to search Movies and TV programs",
         librariesAndPackages:[
             {
                 id:1,
@@ -110,7 +119,46 @@ export const projects=[
         ],
         role:["developer","maintainer"],
         link:"",
-        bakgroundImage:"",
+       
+        featureImage:""
+    },
+    {
+        id:6,
+        name:"Portfolio",
+        stackImages:[
+            '/assets/ts.png',
+            '/assets/next.png'
+        ],
+        description:"A Portfolio developed in Next js Framework using Typescript",
+        librariesAndPackages:[
+            {
+                id:1,
+                name:"Framer Motion"
+            },
+        ],
+        role:["developer","maintainer"],
+        link:"",
+       
+        featureImage:""
+    },
+    {
+        id:7,
+        name:"Event Booking Application",
+        stackImages:[
+            '/assets/ts.png',
+            '/assets/next.png',
+            '/assets/prisma.png'
+        ],
+        description:"A Event booking web application developed in Next js Framework using Javascript and Prisma as a backend",
+        librariesAndPackages:[
+            {
+                id:1,
+                name:"Framer Motion"
+            },
+        ],
+        role:["developer","maintainer"],
+        link:"",
+       
         featureImage:""
     },
 ]
@@ -178,7 +226,7 @@ const skills=[
     },
     {
         id:10,
-        name:'Django',
+        name:'django',
         description:"",
         image:""
     },

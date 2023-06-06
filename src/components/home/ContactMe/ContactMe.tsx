@@ -4,8 +4,8 @@ import { SectionWrapper } from '../../common/SectionWrapper/SectionWrapper.style
 import './ContactMe.scss'
 
 //assets 
-import LinkedInIcon from '../../../../public/assets/React-icon.png';
-import githubIcon from '../../../../public/assets/React-icon.png';
+import LinkedInIcon from '../../../../public/assets/linkedin.png';
+import githubIcon from '../../../../public/assets/github.png';
 import { ContainerWrapper } from '@/components/common/Container/ContainerWrapper.styled';
 import { Typography } from '@/elements/Typography/Typography.styled';
 

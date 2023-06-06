@@ -1,14 +1,60 @@
+@import '../../../app/globals.scss';
+
 .project-section{
+    .swiper {
+        .swiper-slide{
+            max-width: 250px !important;
+            min-width: 200px !important;
+            width: 100%;
+        }       
+        .swiper-wrapper{
+            padding-bottom: 48px;
+        }
+        .swiper-pagination-bullets{
+            
+            .swiper-pagination-bullet-active{
+                width: 32px !important;
+                height: 8px;
+                border-radius: 100%;
+                background-color: #cc7c98;
     
-    .swiper-slide{
-        max-width: 250px !important;
-        min-width: 200px !important;
-        width: 100%;
+            }
+            .swiper-pagination-bullet{
+                width: 8px;
+                height: 8px;
+                border-radius: 24px;
+                background-color: #cc7c98;
+            }
+        }
+        
     }
+
     .project-card{
         position: relative;
-        
-        .project-name {
+        max-height: 400px;
+
+        .project-card-bg{
+            max-height: 400px; 
+        }
+        .featuredImage-wrapper{
+            position: absolute;
+            top: 0;
+            left: 0;
+        .featuredImage{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                // gap: 8px;
+                img{
+                   transform: translate3d(-30%, -20%, -1px);
+                   margin: 4px;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }        
+       
+        .project-content {
             position: absolute;
             top: 50%;
             left: 50%;

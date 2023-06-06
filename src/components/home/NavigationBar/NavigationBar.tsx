@@ -55,27 +55,30 @@ function NavigationBar() {
           </motion.div>
           
       </motion.div>
-      <motion.div 
-      className='navigation-list'
-      transition={{ type: 'tween', stiffness: 100 }}
-      variants={variants} animate={isOpen?"open":"closed"}>
-        {
-          routes.map((route:routesInteface)=>{
-              return <div className='d-flex justify-content-center' key={route.id}>
-                  <Typography
-                    font='Nunito Sans'
-                    sizeDesktop='16'
-                    sizeMobile='16'
-                    weightDesktop='400'
-                    weightMobile='400'
-                    color='white'
-                    className='mb-3'
-                    onClick={()=>redirectionHandler(route.id)}
-                    >{route.name}</Typography>
-              </div>
-          })
-        }
-      </motion.div>
+      {
+        isOpen &&   <motion.div 
+        className='navigation-list'
+        transition={{ type: 'tween', stiffness: 100 }}
+        variants={variants} animate={isOpen?"open":"closed"}>
+          {
+            routes.map((route:routesInteface)=>{
+                return <div className='d-flex justify-content-center' key={route.id}>
+                    <Typography
+                      font='Nunito Sans'
+                      sizeDesktop='16'
+                      sizeMobile='16'
+                      weightDesktop='400'
+                      weightMobile='400'
+                      color='white'
+                      className='mb-3'
+                      onClick={()=>redirectionHandler(route.id)}
+                      >{route.name}</Typography>
+                </div>
+            })
+          }
+        </motion.div>
+      }
+    
     </div>
   )
 }
