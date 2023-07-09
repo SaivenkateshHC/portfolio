@@ -8,6 +8,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import AboutSection from '@/components/home/AboutSection/AboutSection';
 import ProjectSection from '@/components/home/ProjectSection/ProjectSection';
 import ContactMe from '@/components/home/ContactMe/ContactMe';
+import { routes } from '@/utils/constants';
 
 
 const tempArray = [
@@ -29,9 +30,16 @@ export default function Home() {
       <ParallaxProvider>
       <NavigationBar/>
       <BannerSection/>
+      <div id={routes[0].id}>
       <AboutSection/>    
+      </div>
+      <div id={routes[1].id}>
       <ProjectSection/> 
+      </div>
+      <div id={routes[2].id} >
       <ContactMe/>
+      </div>
+      
       </ParallaxProvider>
     </main>
   )

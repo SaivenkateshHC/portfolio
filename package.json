@@ -11,6 +11,7 @@
   "dependencies": {
     "@motionone/utils": "^10.15.1",
     "@popperjs/core": "^2.11.6",
+    "@railway/cli": "^3.3.1",
     "@types/node": "20.1.4",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
@@ -25,6 +26,7 @@
     "react-dom": "18.2.0",
     "react-scroll-parallax": "^3.4.2",
     "sass": "^1.62.1",
+    "sharp": "^0.32.1",
     "styled-components": "6.0.0-rc.1",
     "swiper": "^8.2.2",
     "typescript": "5.0.4"

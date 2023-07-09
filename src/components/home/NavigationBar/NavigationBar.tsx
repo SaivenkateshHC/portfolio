@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import './NavigationBar.scss'
 import {motion} from 'framer-motion'
 import { Typography } from '@/elements/Typography/Typography.styled'
+import Link from 'next/link'
+import { routes } from '@/utils/constants'
 
 const variants={
-  open: { display:'block',opacity: 1, y: 0 ,z:1},
-  closed: { display:'none',opacity: 0, y: "-100%",z:-1},
+  open: { display:'block',opacity: 1, y: 0 ,z:1,transition:{ type: 'tween', stiffness: 100 }},
+  closed: { display:'none',opacity: 0, y: "-100%",z:-1,transition:{ type: 'tween', stiffness: 100 }},
 }
 
 interface routesInteface {
@@ -13,26 +15,12 @@ interface routesInteface {
   id:string
 }
 
-const routes=[
-  {
-    id:"about",
-    name:"About Me"
-  },
-  {
-    id:"projects",
-    name:"Projects"
-  },
-  {
-    id:"contact",
-    name:"Contact Me"
-  },
-]
 
 function NavigationBar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const redirectionHandler=(id:string)=>{
-      console.log(id);
+    setIsOpen(false)
   }
 
   return (
@@ -50,7 +38,7 @@ function NavigationBar() {
           className="mb-0">
             Menu
           </Typography>
-          <motion.div  transition={{ type: "tween", velocity: 50 }} animate={isOpen?{rotateZ:180,scale:[1,2,1],y:"-10px"}:{rotateZ:0,scale:[1,2,1]}}>
+          <motion.div animate={isOpen?{rotateZ:180,scale:[1,2,1],y:"-10px"}:{rotateZ:0,scale:[1,2,1]}}>
           <i className="bi bi-caret-down-fill mx-2"></i>
           </motion.div>
           
@@ -58,11 +46,10 @@ function NavigationBar() {
       {
         isOpen &&   <motion.div 
         className='navigation-list'
-        transition={{ type: 'tween', stiffness: 100 }}
         variants={variants} animate={isOpen?"open":"closed"}>
           {
             routes.map((route:routesInteface)=>{
-                return <div className='d-flex justify-content-center' key={route.id}>
+                return <Link href={"#"+route.id} onClick={()=>redirectionHandler(route.id)} key={route.id}><div className='d-flex justify-content-center' >
                     <Typography
                       font='Nunito Sans'
                       sizeDesktop='16'
@@ -71,9 +58,9 @@ function NavigationBar() {
                       weightMobile='400'
                       color='white'
                       className='mb-3'
-                      onClick={()=>redirectionHandler(route.id)}
+                      
                       >{route.name}</Typography>
-                </div>
+                </div></Link>
             })
           }
         </motion.div>
