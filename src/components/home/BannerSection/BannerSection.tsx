@@ -10,6 +10,10 @@ import { Typography } from '@/elements/Typography/Typography.styled';
 // assets
 
 function BannerSection() {
+  const scrollToProjects = () => {
+    const projectSection = document.getElementById('projects')
+    projectSection?.scrollIntoView({ behavior: 'smooth', block: 'start'})
+  }
   return (
     <div className={'BannerSection'}>
       <SectionWrapper height={'full'}>
@@ -53,11 +57,11 @@ function BannerSection() {
                   weightDesktop="400"
                   weightMobile="400"
                   color="white"
-                >I'm a Software Engineer specializing in building website especially Frontend (and occasionaly designing) with expceptional Digital experience and Eye catching transitions.
-                  Currently,I'm focusing on websites with Augmented Reality and ORM database particularly Prisma
+                >I am a Software Engineer specializing in building website especially Frontend (and occasionaly designing) with expceptional Digital experience and Eye catching transitions.
+                  Currently,I am focusing on websites with Augmented Reality and ORM database particularly Prisma
                 </Typography>
               </div>
-              <button className='px-4 py-1'>
+              <button className='px-4 py-1' onClick={scrollToProjects}>
                 See my works
               </button>
             </div>

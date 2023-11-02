@@ -17,6 +17,7 @@ import { Typography } from '@/elements/Typography/Typography.styled';
 //assets
 import projectCardBg from '../../../../public/assets/glassCard.png'
 import { truncateDescription } from '@/utils/utilityFunctions';
+import Image from 'next/image';
 
 
 const ProjectSection = () => {
@@ -71,7 +72,7 @@ const ProjectSection = () => {
                                                             src="https://raw.githubusercontent.com/nolimits4web/atropos/master/playground/react/i/atropos-bg.svg"
                                                             alt=""
                                                         /> */}
-                                                        <img
+                                                        <Image
                                                             data-atropos-offset="-4.5"
                                                             className='project-card-bg'
                                                             src={'/assets/glassCard.png'}
@@ -81,7 +82,7 @@ const ProjectSection = () => {
                                                             <div className='featuredImage'>
                                                                 {
                                                                     item.stackImages.map(image => {
-                                                                        return <img src={image} alt={'stackImage'} />
+                                                                        return <Image key={image} src={image} alt={'stackImage'} />
                                                                     })
                                                                 }
                                                             </div>

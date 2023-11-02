@@ -56,8 +56,8 @@ if(isDesktopOrLaptop){
                                     weightMobile="400"
                                     color="white" >
                 
-Im a developer with 3 years of experience in developing web application
-and worked on 10+ projects in different language and stack. I'm curious on learning new things in short span and have tried serveral new technologies like 3D model website ( AR websites) and working on new stacks. Im specialized in React js
+I am a developer with 3 years of experience in developing web application
+and worked on 10+ projects in different language and stack. I am curious on learning new things in short span and have tried serveral new technologies like 3D model website ( AR websites) and working on new stacks. Im specialized in React js
               </Typography>
               </div>
               
