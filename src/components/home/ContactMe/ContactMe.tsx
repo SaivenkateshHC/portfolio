@@ -7,7 +7,7 @@ import "./ContactMe.scss";
 import LinkedInIcon from "../../../../public/assets/linkedin.png";
 import githubIcon from "../../../../public/assets/github.png";
 import gmailIcon from "../../../../public/assets/gmail.png";
-import contactUsIllustration from "@/assets/contact_us_illustration.png";
+import contactUsIllustration from "../../../../public/assets/contact_us_illustration.png";
 import { ContainerWrapper } from "@/components/common/Container/ContainerWrapper.styled";
 import { Typography } from "@/elements/Typography/Typography.styled";
 import Link from "next/link";
